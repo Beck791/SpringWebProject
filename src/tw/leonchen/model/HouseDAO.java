@@ -20,7 +20,7 @@ public class HouseDAO {
 
 	}
 	@Autowired
-	public HouseDAO(@Qualifier("SQLserverJndiDataSource")DataSource datasource) {
+	public HouseDAO(@Qualifier("dataSource")DataSource datasource) {
 		this.datasource = datasource;
 	}
 
